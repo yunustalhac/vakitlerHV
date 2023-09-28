@@ -56,10 +56,5 @@ setInterval(() => {
   updateClock();
 }, 1500);
 
-appAxios.get("http://localhost:3000/city").then(response_city => {
-  console.log(response_city)
-  cities.value = response_city.data || []
-})
-
 
 </script>
